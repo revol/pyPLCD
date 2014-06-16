@@ -5,13 +5,16 @@ Control the Raspberry Pi with a 16x2 Display
 ![Display Shield](http://www.adafruit.com/images/large/1110green_LRG.jpg)
 [Adafruit 16x2 Character LCD + Keypad for Raspberry Pi](http://www.adafruit.com/products/1110)
 
-## Python Modules
+
+## Setup
+
+### Python Modules
 https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/tree/master/Adafruit_CharLCDPlate
 
-## Arch
+### Arch
 ...
 
-## Debian Setup
+### Debian/PwnPi
 ```bash
 echo "i2c-bcm2708
 i2c-dev" >> /etc/modules
@@ -24,6 +27,8 @@ apt-get install python-dev python-rpi.gpio python-smbus i2c-tools
  - Time
  - Load
  - Temperature
+ - Filesystems
+ - Memory
  - Network Info
  - Kernel
 - Control
@@ -34,31 +39,31 @@ apt-get install python-dev python-rpi.gpio python-smbus i2c-tools
  
  
 ## ToDo
-- Display Status
- - Space
 - Log Parser
  - Full Log
  - Errors & Warnings
  - special Keywords
-- Control
- - Network
+ 
+- Network Control
   - set ip
   - WiFi
    - AccesPoints
- - Software
+
+- Software Control
   - Services (sshd, ftp, http...)
   - XBMC Control
-  - Security
-   - Sniffer
-   - NMAP
-   - Rogue AP
-   - Reverse Tunnel
-   - Proxy
-   - FakeSites...
-   - BruteForce
+
+- Security
+ - Sniffer
+ - NMAP
+ - Rogue AP
+ - Reverse Tunnel
+ - Proxy
+ - FakeSites...
+ - BruteForce
 
 
 ## notice
-This is my first python project
-It should help me to learn Python...
+This is my first python project\n
+It should help me to learn Python...\n
 Any recommendations/tipps are welcome :)
