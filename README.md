@@ -64,6 +64,8 @@ apt-get install python-dev python-rpi.gpio python-smbus i2c-tools
 
 
 ## notice
-This is my first python project\n
-It should help me to learn Python...\n
+This is my first python project
+
+It should help me to learn Python...
+
 Any recommendations/tipps are welcome :)
