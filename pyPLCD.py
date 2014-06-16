@@ -28,7 +28,7 @@ menu_list = [("Clock", "show_clock()"),
                 [("soon (tm)", "net_info()"),
                  ("Hostname", "sys_info('H')")]),
                ("Kernel", "sys_info('kern')"),
-               ("pyPiR Version", "startup()")]),
+               ("pyPLCD Version", "startup()")]),
              ("Services",
               [("networking", "ctl_service('networking', state='restart')"),
                ("ssh", "ctl_service('ssh')")]),
@@ -38,7 +38,7 @@ menu_list = [("Clock", "show_clock()"),
                ("Test", "run_external('/no/valid/path')")]),
              ("Reboot", "shutdown('r')"),
              ("Shutdown", "shutdown('h')"),
-             ("Exit pyPiR", "shutdown('x')")]
+             ("Exit pyPLCD", "shutdown('x')")]
 
 
 ############
