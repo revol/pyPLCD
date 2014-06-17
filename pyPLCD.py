@@ -28,17 +28,14 @@ menu_list = [("Clock", "show_clock()"),
                 [("soon (tm)", "net_info()"),
                  ("Hostname", "sys_info('H')")]),
                ("Kernel", "sys_info('kern')"),
-               ("pyPLCD Version", "startup()")]),
-             ("Services",
-              [("networking", "ctl_service('networking', state='restart')"),
-               ("ssh", "ctl_service('ssh')")]),
+               ("pyPiR Version", "startup()")]),
              ("External",
               [("Internet Radio", "run_external(PiPhi)"),
                ("SlyPi", "run_external(SlyPi)"),
                ("Test", "run_external('/no/valid/path')")]),
              ("Reboot", "shutdown('r')"),
              ("Shutdown", "shutdown('h')"),
-             ("Exit pyPLCD", "shutdown('x')")]
+             ("Exit pyPiR", "shutdown('x')")]
 
 
 ############
@@ -124,16 +121,6 @@ def sys_info(x):
                 while lcd.buttonPressed(lcd.SELECT) != 1:
                     pass
                 break
-
-
-# Service Control
-def ctl_service(service, state="status"):
-    # init.d or system.d ?
-    if os.path.isdir("/etc/init.d"):
-        cmd = "service {} {}".format(service, state)
-    else:
-        cmd = "systemctl {} {}".format(state, service)
-    print run_command(cmd)
 
 
 # Network
